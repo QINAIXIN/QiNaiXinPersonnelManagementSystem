@@ -1,0 +1,56 @@
+package org.javaboy.vhr.model.vo;
+
+import java.util.Date;
+
+public class EmployeeTrainRespVo {
+
+    private Integer id;
+
+    private Integer eid;
+
+    private String traindate;
+
+    private String traincontent;
+
+    private String remark;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getEid() {
+        return eid;
+    }
+
+    public void setEid(Integer eid) {
+        this.eid = eid;
+    }
+
+    public String getTraindate() {
+        return traindate;
+    }
+
+    public void setTraindate(String traindate) {
+        this.traindate = traindate;
+    }
+
+    public String getTraincontent() {
+        return traincontent;
+    }
+
+    public void setTraincontent(String traincontent) {
+        this.traincontent = traincontent == null ? null : traincontent.trim();
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
+    }
+}

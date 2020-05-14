@@ -1,0 +1,25 @@
+server:
+  port: 8090
+  compression:
+    enabled: true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/vhr?serverTimezone=UTC
+    username: root
+    password: 123456
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 127.0.0.1
+    publisher-confirms: true
+    publisher-returns: true
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+  cache:
+    cache-names: menus_cache
+fastdfs:
+  nginx:
+    host: http://127.0.0.1/
